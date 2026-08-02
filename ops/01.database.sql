@@ -33,19 +33,19 @@ INSERT INTO custom_formats (name, description, include_in_rename) VALUES
 -- Custom Format Conditions
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES
 ('VF', 'Lang Match', 'language', 'all', 0, 0),
-('VF', 'Regex Match', 'releaseTitle', 'all', 0, 0),
-('VOSTFR', 'Regex Match', 'releaseTitle', 'all', 0, 1),
-('FR Tier 1', 'Regex Match', 'releaseTitle', 'all', 0, 1),
-('FR Tier 2', 'Regex Match', 'releaseTitle', 'all', 0, 1),
-('FR Tier 3', 'Regex Match', 'releaseTitle', 'all', 0, 1),
-('FR Tier 4', 'Regex Match', 'releaseTitle', 'all', 0, 1),
-('FR Tier 5', 'Regex Match', 'releaseTitle', 'all', 0, 1),
-('INTL Tier 1', 'Regex Match', 'releaseTitle', 'all', 0, 1),
-('INTL Tier 2', 'Regex Match', 'releaseTitle', 'all', 0, 1),
-('INTL Tier 3', 'Regex Match', 'releaseTitle', 'all', 0, 1),
-('INTL Tier 4', 'Regex Match', 'releaseTitle', 'all', 0, 1),
-('INTL Tier 5', 'Regex Match', 'releaseTitle', 'all', 0, 1),
-('INTL Tier 6', 'Regex Match', 'releaseTitle', 'all', 0, 1);
+('VF', 'Regex Match', 'release_title', 'all', 0, 0),
+('VOSTFR', 'Regex Match', 'release_title', 'all', 0, 1),
+('FR Tier 1', 'Regex Match', 'release_title', 'all', 0, 1),
+('FR Tier 2', 'Regex Match', 'release_title', 'all', 0, 1),
+('FR Tier 3', 'Regex Match', 'release_title', 'all', 0, 1),
+('FR Tier 4', 'Regex Match', 'release_title', 'all', 0, 1),
+('FR Tier 5', 'Regex Match', 'release_title', 'all', 0, 1),
+('INTL Tier 1', 'Regex Match', 'release_title', 'all', 0, 1),
+('INTL Tier 2', 'Regex Match', 'release_title', 'all', 0, 1),
+('INTL Tier 3', 'Regex Match', 'release_title', 'all', 0, 1),
+('INTL Tier 4', 'Regex Match', 'release_title', 'all', 0, 1),
+('INTL Tier 5', 'Regex Match', 'release_title', 'all', 0, 1),
+('INTL Tier 6', 'Regex Match', 'release_title', 'all', 0, 1);
 
 INSERT INTO condition_languages (custom_format_name, condition_name, language_name, except_language) VALUES
 ('VF', 'Lang Match', 'French', 0);
@@ -66,7 +66,7 @@ INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expr
 ('INTL Tier 6', 'Regex Match', 'Regex_INTL_tier_6');
 
 -- Profiles
-INSERT INTO quality_profiles (name, upgrade_allowed, cutoff) VALUES ('1080p', 1, 'Bluray-1080p'), ('4K', 1, 'Bluray-2160p');
+INSERT INTO quality_profiles (name) VALUES ('1080p'), ('4K');
 
 -- Profile Languages
 INSERT INTO quality_profile_languages (quality_profile_name, language_name, type) VALUES
@@ -102,19 +102,19 @@ INSERT INTO quality_group_members (quality_profile_name, quality_group_name, qua
 ('4K', 'Group-HDTV-Webrip-1080p', 'WEBRip-1080p');
 
 -- Profile Qualities (Priorities)
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position) VALUES
-('1080p', NULL, 'Group-Bluray-Webdl-1080p', 1),
-('1080p', NULL, 'Group-HDTV-Webrip-1080p', 2),
-('1080p', 'Remux-1080p', NULL, 3),
-('1080p', NULL, 'Group-Bluray-Webdl-2160p', 4),
-('1080p', NULL, 'Group-HDTV-Webrip-2160p', 5),
-('1080p', 'Remux-2160p', NULL, 6),
-('4K', NULL, 'Group-Bluray-Webdl-2160p', 1),
-('4K', NULL, 'Group-HDTV-Webrip-2160p', 2),
-('4K', 'Remux-2160p', NULL, 3),
-('4K', NULL, 'Group-Bluray-Webdl-1080p', 4),
-('4K', NULL, 'Group-HDTV-Webrip-1080p', 5),
-('4K', 'Remux-1080p', NULL, 6);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, upgrade_until) VALUES
+('1080p', NULL, 'Group-Bluray-Webdl-1080p', 1, 1),
+('1080p', NULL, 'Group-HDTV-Webrip-1080p', 2, 0),
+('1080p', 'Remux-1080p', NULL, 3, 0),
+('1080p', NULL, 'Group-Bluray-Webdl-2160p', 4, 0),
+('1080p', NULL, 'Group-HDTV-Webrip-2160p', 5, 0),
+('1080p', 'Remux-2160p', NULL, 6, 0),
+('4K', NULL, 'Group-Bluray-Webdl-2160p', 1, 1),
+('4K', NULL, 'Group-HDTV-Webrip-2160p', 2, 0),
+('4K', 'Remux-2160p', NULL, 3, 0),
+('4K', NULL, 'Group-Bluray-Webdl-1080p', 4, 0),
+('4K', NULL, 'Group-HDTV-Webrip-1080p', 5, 0),
+('4K', 'Remux-1080p', NULL, 6, 0);
 
 -- Profile Custom Formats Scoring
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES
