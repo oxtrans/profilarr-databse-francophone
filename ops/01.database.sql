@@ -33,19 +33,19 @@ INSERT INTO custom_formats (name, description, include_in_rename) VALUES
 -- Custom Format Conditions
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES
 ('VF', 'Lang Match', 'language', 'all', 0, 0),
-('VF', 'Regex Match', 'pattern', 'all', 0, 0),
-('VOSTFR', 'Regex Match', 'pattern', 'all', 0, 1),
-('FR Tier 1', 'Regex Match', 'pattern', 'all', 0, 1),
-('FR Tier 2', 'Regex Match', 'pattern', 'all', 0, 1),
-('FR Tier 3', 'Regex Match', 'pattern', 'all', 0, 1),
-('FR Tier 4', 'Regex Match', 'pattern', 'all', 0, 1),
-('FR Tier 5', 'Regex Match', 'pattern', 'all', 0, 1),
-('INTL Tier 1', 'Regex Match', 'pattern', 'all', 0, 1),
-('INTL Tier 2', 'Regex Match', 'pattern', 'all', 0, 1),
-('INTL Tier 3', 'Regex Match', 'pattern', 'all', 0, 1),
-('INTL Tier 4', 'Regex Match', 'pattern', 'all', 0, 1),
-('INTL Tier 5', 'Regex Match', 'pattern', 'all', 0, 1),
-('INTL Tier 6', 'Regex Match', 'pattern', 'all', 0, 1);
+('VF', 'Regex Match', 'release_title', 'all', 0, 0),
+('VOSTFR', 'Regex Match', 'release_title', 'all', 0, 1),
+('FR Tier 1', 'Regex Match', 'release_title', 'all', 0, 1),
+('FR Tier 2', 'Regex Match', 'release_title', 'all', 0, 1),
+('FR Tier 3', 'Regex Match', 'release_title', 'all', 0, 1),
+('FR Tier 4', 'Regex Match', 'release_title', 'all', 0, 1),
+('FR Tier 5', 'Regex Match', 'release_title', 'all', 0, 1),
+('INTL Tier 1', 'Regex Match', 'release_title', 'all', 0, 1),
+('INTL Tier 2', 'Regex Match', 'release_title', 'all', 0, 1),
+('INTL Tier 3', 'Regex Match', 'release_title', 'all', 0, 1),
+('INTL Tier 4', 'Regex Match', 'release_title', 'all', 0, 1),
+('INTL Tier 5', 'Regex Match', 'release_title', 'all', 0, 1),
+('INTL Tier 6', 'Regex Match', 'release_title', 'all', 0, 1);
 
 INSERT INTO condition_languages (custom_format_name, condition_name, language_name, except_language) VALUES
 ('VF', 'Lang Match', 'French', 0);
@@ -66,7 +66,7 @@ INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expr
 ('INTL Tier 6', 'Regex Match', 'Regex_INTL_tier_6');
 
 -- Profiles
-INSERT INTO quality_profiles (name) VALUES ('1080p'), ('4K');
+INSERT INTO quality_profiles (name, upgrade_allowed, cutoff) VALUES ('1080p', 1, 'Group-Bluray-Webdl-1080p'), ('4K', 1, 'Group-Bluray-Webdl-2160p');
 
 -- Profile Languages
 INSERT INTO quality_profile_languages (quality_profile_name, language_name, type) VALUES
