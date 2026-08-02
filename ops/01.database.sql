@@ -144,3 +144,15 @@ INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_
 ('4K', 'INTL Tier 4', 'all', 600),
 ('4K', 'INTL Tier 5', 'all', 500),
 ('4K', 'INTL Tier 6', 'all', 400);
+
+-- Delay Profiles
+INSERT INTO delay_profiles (name, preferred_protocol, usenet_delay, torrent_delay) VALUES 
+('Global Delay', 'prefer_torrent', 120, 120);
+
+-- Radarr Naming
+INSERT INTO radarr_naming (name, rename, movie_format, movie_folder_format) VALUES
+('Default', 1, '{Movie CleanTitle} {(Release Year)} {tmdb-{TmdbId}} {edition-{Edition Tags}} {[Custom Formats]}{[Quality Full]}{[MediaInfo 3D]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{[Mediainfo VideoCodec]}{-Release Group}', '{Movie CleanTitle} ({Release Year})');
+
+-- Sonarr Naming
+INSERT INTO sonarr_naming (name, rename, standard_episode_format, daily_episode_format, anime_episode_format, series_folder_format, season_folder_format) VALUES
+('Default', 1, '{Series TitleYear} - S{season:00}E{episode:00} - {Episode CleanTitle:90} {[Custom Formats]}{[Quality Full]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo VideoCodec]}{-Release Group}', '{Series TitleYear} - {Air-Date} - {Episode CleanTitle:90} {[Custom Formats]}{[Quality Full]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo VideoCodec]}{-Release Group}', '{Series TitleYear} - S{season:00}E{episode:00} - {Episode CleanTitle:90} {[Custom Formats]}{[Quality Full]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo VideoCodec]}{-Release Group}', '{Series TitleYear}', 'Season {season:00}');
