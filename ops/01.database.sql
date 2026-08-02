@@ -71,23 +71,23 @@ INSERT INTO quality_groups (quality_profile_name, name) VALUES
 ('4K', 'Group-Bluray-Webdl-1080p'),
 ('4K', 'Group-HDTV-Webrip-1080p');
 
-INSERT INTO quality_group_members (quality_profile_name, quality_group_name, quality_name) VALUES
-('1080p', 'Group-Bluray-Webdl-1080p', 'Bluray-1080p'),
-('1080p', 'Group-Bluray-Webdl-1080p', 'WEBDL-1080p'),
-('1080p', 'Group-HDTV-Webrip-1080p', 'HDTV-1080p'),
-('1080p', 'Group-HDTV-Webrip-1080p', 'WEBRip-1080p'),
-('1080p', 'Group-Bluray-Webdl-2160p', 'Bluray-2160p'),
-('1080p', 'Group-Bluray-Webdl-2160p', 'WEBDL-2160p'),
-('1080p', 'Group-HDTV-Webrip-2160p', 'HDTV-2160p'),
-('1080p', 'Group-HDTV-Webrip-2160p', 'WEBRip-2160p'),
-('4K', 'Group-Bluray-Webdl-2160p', 'Bluray-2160p'),
-('4K', 'Group-Bluray-Webdl-2160p', 'WEBDL-2160p'),
-('4K', 'Group-HDTV-Webrip-2160p', 'HDTV-2160p'),
-('4K', 'Group-HDTV-Webrip-2160p', 'WEBRip-2160p'),
-('4K', 'Group-Bluray-Webdl-1080p', 'Bluray-1080p'),
-('4K', 'Group-Bluray-Webdl-1080p', 'WEBDL-1080p'),
-('4K', 'Group-HDTV-Webrip-1080p', 'HDTV-1080p'),
-('4K', 'Group-HDTV-Webrip-1080p', 'WEBRip-1080p');
+INSERT INTO quality_group_members (quality_profile_name, quality_group_name, quality_name, position) VALUES
+('1080p', 'Group-Bluray-Webdl-1080p', 'Bluray-1080p', 0),
+('1080p', 'Group-Bluray-Webdl-1080p', 'WEBDL-1080p', 1),
+('1080p', 'Group-HDTV-Webrip-1080p', 'HDTV-1080p', 0),
+('1080p', 'Group-HDTV-Webrip-1080p', 'WEBRip-1080p', 1),
+('1080p', 'Group-Bluray-Webdl-2160p', 'Bluray-2160p', 0),
+('1080p', 'Group-Bluray-Webdl-2160p', 'WEBDL-2160p', 1),
+('1080p', 'Group-HDTV-Webrip-2160p', 'HDTV-2160p', 0),
+('1080p', 'Group-HDTV-Webrip-2160p', 'WEBRip-2160p', 1),
+('4K', 'Group-Bluray-Webdl-2160p', 'Bluray-2160p', 0),
+('4K', 'Group-Bluray-Webdl-2160p', 'WEBDL-2160p', 1),
+('4K', 'Group-HDTV-Webrip-2160p', 'HDTV-2160p', 0),
+('4K', 'Group-HDTV-Webrip-2160p', 'WEBRip-2160p', 1),
+('4K', 'Group-Bluray-Webdl-1080p', 'Bluray-1080p', 0),
+('4K', 'Group-Bluray-Webdl-1080p', 'WEBDL-1080p', 1),
+('4K', 'Group-HDTV-Webrip-1080p', 'HDTV-1080p', 0),
+('4K', 'Group-HDTV-Webrip-1080p', 'WEBRip-1080p', 1);
 
 -- Profile Qualities (Priorities)
 INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, upgrade_until) VALUES
