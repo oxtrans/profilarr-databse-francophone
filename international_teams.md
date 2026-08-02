@@ -1,0 +1,145 @@
+# International Release Teams
+
+## Tier 1
+- coffee
+- DON
+- IMNEWHERE
+- LM
+- RARBG
+- REBORN
+- SA89
+- SoLaR
+- TeamSyndicate
+- ZoroSenpai
+
+## Tier 2
+- c0kE
+- CtrlHD
+- D-Z0N3
+- EbP
+- Geek
+- HiFi
+- LoRD
+- maniac
+- TayTo
+- VietHD
+- ZQ
+
+## Tier 3
+- BV
+- CRiSC
+- decibeL
+- FoRM
+- HiDt
+- HiP
+- iFT
+- MADSKY
+- SbR
+- WMING
+
+## Tier 4
+- ATELiER
+- BLOOM
+- BMF
+- eXterminator
+- faBR
+- HDMaNiAcS
+- IDE
+- LESTiN
+- LolHD
+- NCmt
+- NTb
+- RandomBytes
+- Skazhutin
+- Softboat
+
+## Tier 5
+- 0BSiDiAN
+- AJP69
+- BakedFEL
+- BAT1
+- BSTD
+- Chotab
+- CJ
+- CRX
+- Dariush
+- E.N.D
+- E1
+- EA
+- EDPH
+- ELiTE
+- ENDSkY
+- ESiR
+- EXCiSION
+- FraMeSToR
+- GALAXY
+- GS88
+- GZ
+- hdalx
+- HQMUX
+- HR
+- iLoveHD
+- KASHMiR
+- Kitsune
+- LAZY
+- LiNG
+- luvBB
+- Natuyuki
+- NiBuRu
+- nmd
+- NyHD
+- ORiGEN
+- pcroland
+- Penumbra
+- playHD
+- Positive
+- PTer
+- RiCO
+- rightSIZE
+- RO
+- Rose3Thorn
+- rttr
+- SaNcTi
+- SiMPLE
+- SOP
+- SPHD
+- TBB
+- TDD
+- TnP
+- ViSUM
+- VLAD
+- W4NK3R
+- WiLF
+- xander
+- ZIMBO
+
+## Tier 6
+- ASD87
+- BRUTE
+- BTN
+- CART
+- CHD
+- EuReKA
+- GALVANiZE
+- HaB
+- HANDJOB
+- HDC
+- iON
+- Ivandro
+- j3rico
+- KnG
+- LEGi0N
+- Lulz
+- MaG
+- MTeam
+- NiP
+- ORBiT
+- P0W4HD
+- PTP
+- PuTao
+- ROCiNANTE
+- Slappy
+- ThD
+- WiKi
+- WiLDCAT
+
