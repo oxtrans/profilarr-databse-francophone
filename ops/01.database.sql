@@ -1,7 +1,7 @@
 -- Regular Expressions
 INSERT INTO regular_expressions (name, pattern) VALUES
-('Regex_VF', '(?i)\\b(multi|multifrench|multi-fr|french|truefrench|vff?|vfi|vfq|fr)\\b'),
-('Regex_VOSTFR', '(?i)\\b(vostfr?|vost|subfrench|french\\.subs?|fr\\.subs?|sub\\.fr|subbed\\.fr)\\b'),
+('Regex_VF', '(?i)\b(multi|multifrench|multi-fr|french|truefrench|vff?|vfi|vfq|fr)\b'),
+('Regex_VOSTFR', '(?i)\b(vostfr?|vost|subfrench|french\.subs?|fr\.subs?|sub\.fr|subbed\.fr)\b'),
 ('Regex_FR_tier_1', '(?i)[-.](AMEN|ARK01|B@tman|BDHD|BlackAngel|BONBON|BOUBA|BOUC|Choco|Darki|Delivroozzi|FCK|FLOP|FORWARD|FoX|FRATERNiTY|FrIeNdS|FtLi|FTMVHD|Fuceo|FW|GKS|Goldenyann|HDForever|HeavyWeight|KAAZA|KTM|M@x|MARBLECAKE|MAX|MOONLY|MTDK|MUSTANG|NoLo|Obi|ONLY|OZEF|PATOPESTO|PEPiTE|PiouPiou|Psaro|Punisher694|QUEBEC63|RG|ROMKENT|Sicario|SR\-71|SUPPLY|T3KASHi|TANOSHii|TenmaLand|Tezcat74|TFA|THESYNDICATE|TiNA|Tsundere\-Raws|TyHD|TyrellCorp|YODA|Zapax)$'),
 ('Regex_FR_tier_2', '(?i)[-.](AJP|ALLDAYiN|Anime\-Heart|Aoi\-Project|ATE|AW|CHiLL|COCAIN|COLL3CTiF|D4RK|DREAM|DUSTiN|Elecman|ENIGMA|FiND|Floppy|FUJiSAN|GHT|GORE|GundamGuy|HYPERION|IssouCorp|J4CK|Kaerizaki\-Fansub|KAF|KHFR|LiDHL|LKT|Maxadonf|mHDgz|MULTiPLY|MYSTERiON|N3ZUKO|Nagutos|Natsumi\-no\-Sekai|NEO|NEOSTARK|NoNE|OECUF|Onii\-ChanSub|ONLYMOViE|Owlolf|PATOMiEL|pERsO|Pikari\-Teshima|PiXEL|PopHD|POTO|PRESTiGE|QTZ|QUALiTY|R3MIX|RiFiFi|RiPiT|SANTACRUZ|Seimeisen|Slay3R|SUPERFLU|TARDiS|TAT|Team\.Arcedo|Themouche|TkHD|TLC|TMB|TSR|UTT|WaCkS|Winks|Xantar|XSPITFIRE911|Yangire\-Raws|Yarashii|ZTM)$'),
 ('Regex_FR_tier_3', '(?i)[-.](Anime\.Heart|Aoi\.Project|Arcedo|BLV|BraD|BY_ORDER|D3T3R10R1TY|dRuIdE|Erai\-raws|Galactic|Alexis|HANAMi|Kaerizaki\.Fansub|kazuizui|KHAYA|KHFR|KushEnthusiast|LAZARUS|matheousse|MAX|Monkey\-D\.Lulu|NekoYu|NeoSG|Onii\-ChanSub|Pikari\.Teshima|QC63|RONiN|Scaph|TheFantastics|ToonsHub|Tsundere\.Raws|TTN|VARYG|WQM|Yangire\.Raws)$'),

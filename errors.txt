@@ -1,0 +1,4 @@
+Error near line 536: FOREIGN KEY constraint failed
+Error near line 558: FOREIGN KEY constraint failed
+Error near line 572: FOREIGN KEY constraint failed
+Error near line 591: FOREIGN KEY constraint failed
