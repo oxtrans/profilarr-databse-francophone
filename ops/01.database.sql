@@ -156,3 +156,17 @@ INSERT INTO radarr_naming (name, rename, movie_format, movie_folder_format) VALU
 -- Sonarr Naming
 INSERT INTO sonarr_naming (name, rename, standard_episode_format, daily_episode_format, anime_episode_format, series_folder_format, season_folder_format) VALUES
 ('Default', 1, '{Series TitleYear} - S{season:00}E{episode:00} - {Episode CleanTitle:90} {[Custom Formats]}{[Quality Full]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo VideoCodec]}{-Release Group}', '{Series TitleYear} - {Air-Date} - {Episode CleanTitle:90} {[Custom Formats]}{[Quality Full]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo VideoCodec]}{-Release Group}', '{Series TitleYear} - S{season:00}E{episode:00} - {Episode CleanTitle:90} {[Custom Formats]}{[Quality Full]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo VideoCodec]}{-Release Group}', '{Series TitleYear}', 'Season {season:00}');
+
+-- Media Settings
+INSERT INTO radarr_media_settings (name, propers_repacks, enable_media_info) VALUES
+('Default', 'preferAndUpgrade', 1);
+
+INSERT INTO sonarr_media_settings (name, propers_repacks, enable_media_info) VALUES
+('Default', 'preferAndUpgrade', 1);
+
+-- Quality Definitions (Dynamic for all qualities)
+INSERT INTO radarr_quality_definitions (name, quality_name, min_size, max_size, preferred_size)
+SELECT 'Default', name, 0, 400, 400 FROM qualities;
+
+INSERT INTO sonarr_quality_definitions (name, quality_name, min_size, max_size, preferred_size)
+SELECT 'Default', name, 0, 400, 400 FROM qualities;
